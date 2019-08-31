@@ -6,6 +6,15 @@
 	.title {
 		font-size: 28px;
 		margin-bottom: 25px;
+		border-bottom: dotted 1px black;
+
+		.sub {
+			width: 30%;
+			text-align: center;
+			margin-left: 35%;
+			font-weight: 100;
+			font-size: 0.7em;
+		}
 	}
 
 	.preview {
