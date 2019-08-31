@@ -1,0 +1,32 @@
+
+~~~~~~~~~stripe checkout~~~~~~~~~
+register on stripe, gets API key under developer/apikey
+$npm install react-stripe-checkout
+go to  react-stripe-checkout github and see the attributes we can use
+https://github.com/azmenak/react-stripe-checkout
+create a src/components/stripe-button/stripe-button.components.jsx
+import to checkout.component
+
+~~~~~~~~~change favicon~~~~~~~~~
+ in public/index.html
+
+ ~~~~~~~~~host on heroku~~~~~~~~~
+ download heroku cli
+ https://devcenter.heroku.com/articles/heroku-cli
+ $heroku --version
+ $heroku login
+ $ heroku create crwn-clothing-live-gigi --buildpack https://github.com/mars/create-react-app-buildpack.git
+ $git push heroku master
+
+ what's buildpack for?
+ https://github.com/mars/create-react-app-buildpack
+ This buildpack deploys a React UI as a static web site. not to make a single app that combines React UI with a server-side backend (Node, Ruby, Python…)
+ 
+  ~~~~~~~~~firebase need to know who's allowed to access with google signin~~~~~~~~~
+copy url 
+go to firebase/console/authentication/access... paste it in
+refresh your page
+
+ ~~~~~~~~~don't want logger middleware to show when deployed~~~~~~~~~
+ to make sure we only apply logger middleware in development
+in store.js
