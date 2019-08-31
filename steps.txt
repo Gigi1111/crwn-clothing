@@ -30,3 +30,34 @@ refresh your page
  ~~~~~~~~~don't want logger middleware to show when deployed~~~~~~~~~
  to make sure we only apply logger middleware in development
 in store.js
+$git add .
+$git commit -m '..'
+$git push heroku master
+
+ ~~~~~~~~~145. CSS in JS~~~~~~~~~
+method(1) in App.js
+ const textStyles={
+     color: 'red',
+     fontSize: '24px'
+ }
+ <div style={textStyles}...
+**
+use CSS in JS is faster
+
+method(2) use styled-components library
+https://github.com/styled-components/styled-components
+
+App.js
+---
+import styled from 'styled-components'
+const Text = styled.div`
+    color: red;
+    font-size: 24px;
+    border: ${({isActive})=>isActive? '1px solid black': '3px dotted green'};
+`;
+<Text isActive={true}>...
+
+ ~~~~~~~~~147. incoporate styled components~~~~~~~~~
+$npm install styled-components
+first try in homepage.com, then header.com
+completed : https://github.com/zhangmyihua/lesson-26-complete
